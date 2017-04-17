@@ -1,4 +1,4 @@
-update=2017 March 12, Sunday 09:44:33
+update=2017 April 14, Friday 14:15:33
 version=1
 last_client=kicad
 [pcbnew]
@@ -59,3 +59,13 @@ LibName27=atmel
 LibName28=contrib
 LibName29=valves
 LibName30=/Users/sschols/kicad/libraries/ArduProMini/ArduProMiniTKB
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60

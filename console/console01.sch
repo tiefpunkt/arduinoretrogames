@@ -29,6 +29,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:ArduProMiniTKB
+LIBS:console01-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -485,14 +486,12 @@ Wire Wire Line
 	5150 4050 5650 4050
 Wire Wire Line
 	5350 4150 5150 4150
-Text GLabel 5300 4750 2    60   Input ~ 0
+Text GLabel 5650 4250 2    60   Input ~ 0
 P1.2
 Text GLabel 5600 4650 2    60   Input ~ 0
 P2.2
 Wire Wire Line
 	5150 4650 5600 4650
-Wire Wire Line
-	5300 4750 5150 4750
 Text GLabel 5300 4550 2    60   Input ~ 0
 P1.3
 Text GLabel 5600 4450 2    60   Input ~ 0
@@ -525,17 +524,6 @@ F 3 "" H 6200 6100 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_01X04 P4
-U 1 1 58C5A839
-P 7400 5850
-F 0 "P4" H 7400 6100 50  0000 C CNN
-F 1 "Pl2 Pins" V 7500 5850 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x04" H 7400 5850 50  0001 C CNN
-F 3 "" H 7400 5850 50  0000 C CNN
-	1    7400 5850
-	1    0    0    -1  
-$EndComp
-$Comp
 L VCC #PWR011
 U 1 1 58C5A88B
 P 7100 5650
@@ -549,18 +537,16 @@ $EndComp
 $Comp
 L GND #PWR012
 U 1 1 58C5A891
-P 7100 6050
-F 0 "#PWR012" H 7100 5800 50  0001 C CNN
-F 1 "GND" H 7100 5900 50  0000 C CNN
-F 2 "" H 7100 6050 50  0000 C CNN
-F 3 "" H 7100 6050 50  0000 C CNN
-	1    7100 6050
+P 7000 6050
+F 0 "#PWR012" H 7000 5800 50  0001 C CNN
+F 1 "GND" H 7000 5900 50  0000 C CNN
+F 2 "" H 7000 6050 50  0000 C CNN
+F 3 "" H 7000 6050 50  0000 C CNN
+	1    7000 6050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7100 6050 7100 6000
-Wire Wire Line
-	7100 6000 7200 6000
+	7000 6000 7200 6000
 Wire Wire Line
 	7200 5700 7100 5700
 Wire Wire Line
@@ -654,4 +640,53 @@ F 3 "" H 5200 5950 50  0000 C CNN
 $EndComp
 Wire Wire Line
 	5200 5900 5200 5950
+Wire Wire Line
+	5150 4250 5650 4250
+Text GLabel 6900 4300 0    60   Input ~ 0
+P2.3
+Text GLabel 6900 5200 0    60   Input ~ 0
+P2.4
+Wire Wire Line
+	6900 4300 7150 4300
+Wire Wire Line
+	7150 4300 7150 4500
+Wire Wire Line
+	7150 5000 7150 5200
+Wire Wire Line
+	7150 5200 6900 5200
+Text GLabel 3300 4250 0    60   Input ~ 0
+P2.3
+Text GLabel 3300 4050 0    60   Input ~ 0
+P2.4
+Wire Wire Line
+	3300 4050 3950 4050
+Wire Wire Line
+	3950 4250 3300 4250
+$Comp
+L CONN_01X06 P4
+U 1 1 58CA59C3
+P 7400 5950
+F 0 "P4" H 7400 6300 50  0000 C CNN
+F 1 "Pl2 Pins" V 7500 5950 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x06" H 7400 5950 50  0001 C CNN
+F 3 "" H 7400 5950 50  0000 C CNN
+	1    7400 5950
+	1    0    0    -1  
+$EndComp
+Text GLabel 6900 6450 0    60   Input ~ 0
+P2.4
+Text GLabel 6900 6300 0    60   Input ~ 0
+P2.3
+Wire Wire Line
+	7000 6000 7000 6050
+Wire Wire Line
+	7200 6100 7100 6100
+Wire Wire Line
+	7100 6100 7100 6300
+Wire Wire Line
+	7100 6300 6900 6300
+Wire Wire Line
+	6900 6450 7200 6450
+Wire Wire Line
+	7200 6450 7200 6200
 $EndSCHEMATC
