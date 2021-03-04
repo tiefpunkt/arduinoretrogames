@@ -1,3 +1,6 @@
+# Arduino Retro Gameconsole
+Rob Cai published two Instructables in which he used an Arduino to emulate some old-school videogames. I didn’t want to build the project on protoboard, so I designed these PCBs for that.
+
 ## Hardware
 
 The hardware of the retro videogame console is made up of a mainboard,
@@ -5,7 +8,6 @@ and two different controller types.
 
 ### The Mainboard
 
-<img src="Retrogames_mainboard.jpg" title="fig:Mainboard" width="240" alt="Mainboard" />
 The mainboard runs the video games, and connect to the VGA monitor, one
 or two controllers, and to power. It's made up of an Arduino Pro Mini, a
 few resistors, some more connectors, and possibly a buzzer for audio.
@@ -141,16 +143,11 @@ connected to the mainboard.
 The games for the Arduino Retro Videogame Console are made by Rob Cai,
 and can be found on Instructables
 
--   [Pong, Breakout, Bomber, Etch-a-Sketch in one][]
--   [Pong][]
+* [Pong, Breakout, Bomber, Etch-a-Sketch in one](http://www.instructables.com/id/Arduino-VGA-Games-4-in-1/)
+* [Pong](http://www.instructables.com/id/VGA-Pong-with-Arduino-Uno/)
 
 ## Resources
+* [Arduino Lib](https://github.com/smaffer/vgax)
 
--   [Arduino Lib][]
-
-[Category:Project][]
-
-  [Pong, Breakout, Bomber, Etch-a-Sketch in one]: http://www.instructables.com/id/Arduino-VGA-Games-4-in-1/
-  [Pong]: http://www.instructables.com/id/VGA-Pong-with-Arduino-Uno/
-  [Arduino Lib]: https://github.com/smaffer/vgax
-  [Category:Project]: Category:Project "wikilink"
+## License
+Licensed under Creative Commons Attribution-ShareAlike 4.0 Unported License (CC BY-SA 4.0)
